@@ -18,6 +18,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/audio/mixer_paths.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_paths.xml
 
 # Boot animation
+TARGET_BOOT_ANIMATION_RES := 720
 TARGET_SCREEN_HEIGHT := 1600
 TARGET_SCREEN_WIDTH := 720
 
@@ -46,7 +47,7 @@ PRODUCT_PACKAGES += \
 # Overlay
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
-    $(LOCAL_PATH)/overlay-lineage
+    $(LOCAL_PATH)/overlay-infinity
 
 # Permissions
 PRODUCT_COPY_FILES += \

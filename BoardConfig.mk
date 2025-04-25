@@ -33,6 +33,9 @@ ODM_MANIFEST_FNC_FILES := $(DEVICE_PATH)/sku/manifest_fnc.xml
 ODM_MANIFEST_N_FILES := $(DEVICE_PATH)/sku/manifest_n.xml
 ODM_MANIFEST_NC_FILES := $(DEVICE_PATH)/sku/manifest_nc.xml
 
+# Init
+TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_guamp
+
 # Kernel
 BOARD_BOOT_HEADER_VERSION := 2
 TARGET_KERNEL_CONFIG += vendor/ext_config/guamp-default.config

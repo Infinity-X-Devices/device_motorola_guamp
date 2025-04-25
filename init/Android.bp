@@ -3,6 +3,14 @@
 // SPDX-License-Identifier: Apache-2.0
 //
 
+cc_library_static {
+    name: "libinit_guamp",
+    srcs: ["init_guamp.cpp"],
+    recovery_available: true,
+    include_dirs: ["system/core/init"],
+    shared_libs: ["libbase"]
+}
+
 prebuilt_etc {
     name: "fstab.qcom",
     src: "fstab.qcom",
